@@ -6,9 +6,9 @@ import { checkPassword, validateEmail } from '../../utils/helpers';
 
 export default function Contact() {
 
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [userName, setUserName] = useState('');
-  const [password, setPassword] = useState('');
+  const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
   const handleInputChange = (e) => {
@@ -18,12 +18,12 @@ export default function Contact() {
     const inputValue = target.value;
 
 
-    if (inputType === 'email') {
+    if (inputType === 'name') {
+      setName(inputValue);
+    } else if (inputType === 'email') {
       setEmail(inputValue);
-    } else if (inputType === 'userName') {
-      setUserName(inputValue);
     } else {
-      setPassword(inputValue);
+      setMessage(inputValue);
     }
   };
 
@@ -32,48 +32,48 @@ export default function Contact() {
     e.preventDefault();
 
 
-    if (!validateEmail(email) || !userName) {
-      setErrorMessage('Email or username is invalid');
+    if (!validateEmail(name) || !email) {
+      setErrorMessage('name or email is invalid');
 
       return;
 
     }
-    if (!checkPassword(password)) {
+    if (!checkPassword(message)) {
       setErrorMessage(
-        `Choose a more secure password for the account: ${userName}`
+        `Message error: ${email}`
       );
       return;
     }
-    alert(`Hello ${userName}`);
+    alert(`Hello ${email}`);
 
-    setUserName('');
-    setPassword('');
+    setName('');
     setEmail('');
+    setMessage('');
   };
 
   return (
     <div>
       <form className="form">
         <input
+          value={name}
+          name="name"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="name"
+        />
+        <input
           value={email}
           name="email"
           onChange={handleInputChange}
-          type="email"
+          type="text"
           placeholder="email"
         />
         <input
-          value={userName}
-          name="userName"
+          value={message}
+          name="message"
           onChange={handleInputChange}
           type="text"
-          placeholder="username"
-        />
-        <input
-          value={password}
-          name="password"
-          onChange={handleInputChange}
-          type="password"
-          placeholder="Password"
+          placeholder="Message"
         />
         <button type="button" onClick={handleFormSubmit}>Submit</button>
       </form>
