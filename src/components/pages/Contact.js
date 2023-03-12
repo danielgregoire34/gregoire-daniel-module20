@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../pages/style.css';
 
 
-import { checkPassword, validateEmail } from '../../utils/helpers';
+import { checkMessage, validateEmail } from '../../utils/helpers';
 
 export default function Contact() {
 
@@ -38,9 +38,9 @@ export default function Contact() {
       return;
 
     }
-    if (!checkPassword(message)) {
+    if (!checkMessage(message)) {
       setErrorMessage(
-        `Message error: ${email}`
+        `Message error: ${message}`
       );
       return;
     }
