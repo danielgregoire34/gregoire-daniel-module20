@@ -1,24 +1,79 @@
 import React from 'react';
+import codeimage from './images/codeimage2.png';
+import codeimage1 from './images/htmlcode.png';
+import lightbulb from './images/projectslightbulb.png'
+import bluecode from './images/bluecodeimage.png'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+import {Card, Container, Row, } from 'react-bootstrap';
 
 export default function Portofolio() {
   return (
+    
     <div>
       <h1>Portofolio</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+
+      <Container>
+<Row className = "rows">
+  <Card style ={{color: "#000", marginBottom:1, width:"50%"}}>
+    <a href="https://github.com/danielgregoire34/gregoire-daniel-module20" target="_blank" rel="noreferrer">
+    <Card.Img src={codeimage}/>
+      <Card.Body>
+        <Card.Title>
+          Project1
+        </Card.Title>
+        <Card.Text>
+          Example Project
+        </Card.Text>
+      </Card.Body>
+      </a>
+  </Card>
+  <Card style ={{color: "#000", marginBottom:1, width:"50%"}}>
+    <a href="https://github.com/danielgregoire34/gregoire-daniel-module20" target="_blank" rel="noreferrer">
+    <Card.Img src={codeimage1}/>
+      <Card.Body>
+        <Card.Title>
+          Project2
+        </Card.Title>
+        <Card.Text>
+          Example Project
+        </Card.Text>
+      </Card.Body>
+      </a>
+  </Card>
+  <Card style ={{color: "#000", marginBottom:1, width:"50%"}}>
+    <a href="https://github.com/danielgregoire34/gregoire-daniel-module20" target="_blank" rel="noreferrer">
+    <Card.Img src={bluecode}/>
+      <Card.Body>
+        <Card.Title>
+          Project3
+        </Card.Title>
+        <Card.Text>
+          Example Project
+        </Card.Text>
+      </Card.Body>
+      </a>
+  </Card>
+  <Card style ={{color: "#000", marginBottom:1, width:"50%"}}>
+    <a href="https://github.com/danielgregoire34/gregoire-daniel-module20" target="_blank" rel="noreferrer">
+    <Card.Img src={lightbulb}/>
+      <Card.Body>
+        <Card.Title>
+          Project4
+        </Card.Title>
+        <Card.Text>
+          Example Project
+        </Card.Text>
+      </Card.Body>
+      </a>
+  </Card>
+</Row>
+      </Container>
+
     </div>
+
+
+
   );
 }
