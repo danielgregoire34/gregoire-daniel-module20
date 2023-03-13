@@ -2,7 +2,6 @@ import React from "react";
 import {
 Box,
 Container,
-FooterLink,
 Heading,
 } from "./FooterStyles";
 

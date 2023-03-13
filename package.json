@@ -1,6 +1,6 @@
 {
-  "homepage": "https://danielgregoire34.github.io/gregoire-daniel-module20/index.html",
-  "name": "00-practice-app",
+  "homepage": "https://danielgregoire34.github.io/gregoire-daniel-module20/",
+  "name": "gregoire-daniel-module20",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
