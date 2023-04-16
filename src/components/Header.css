@@ -6,8 +6,16 @@
 .header h1 {
     margin: 0;
     padding-top: 75px;
-    padding-right: 1075px;
+    padding-right: 42px;
     text-align: center;
     color: white;
-    font-size: 3rem;
+    /*font-size: 48px;*/
+}
+
+.home{
+    text-align: center;
+}
+
+.pfp{
+    width: 100px,
 }

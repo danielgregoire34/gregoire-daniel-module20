@@ -6,7 +6,7 @@ headerStyle: {
     background: 'teal',
 },
 headingStyle: {
-    fontSize: '100px',
+    fontSize: '50px',
 },
 };
 
@@ -15,7 +15,7 @@ headingStyle: {
 function Header() {
 return (
     <header style={styles.headerStyle} className="header">
-    <h1 style={styles.headingStyle}>Daniel Gregoire</h1>
+    <h1 style={styles.headingStyle} >Daniel Gregoire Full Stack Web Developer</h1>
     </header>
 );
 }
