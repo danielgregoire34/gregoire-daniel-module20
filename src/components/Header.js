@@ -1,5 +1,7 @@
 import React from 'react';
 import './Header.css';
+import codeimage1 from './pages/images/htmlcode.png';
+import { Card } from 'react-bootstrap';
 
 const styles = {
 headerStyle: {
@@ -9,7 +11,6 @@ headingStyle: {
     fontSize: '50px',
 },
 };
-
 
 
 function Header() {

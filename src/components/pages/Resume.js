@@ -1,21 +1,18 @@
 import React from 'react';
 
-//import resume from './pages/images/danielgresume.png';
 import { Image } from 'primereact/image';
-//import {Image} from '/pages/images/dgresume.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import resumeupdate from './images/Daniel_Gregoire_Resume.jpg';
 
-//import {Card, Container, Row, } from 'react-bootstrap';
-//import {Image} from 'react-native';
-import resume from './images/dgresume.jpg';
-
+import {Card} from 'react-bootstrap';
 
 export default function Resume() {
   return (
     <div>
       <div>
-      <img src={resume} alt="Daniel Gregoire Resume"
-      style={{width: 1500, height: 1500,}}/>
+      <Card.Img src={resumeupdate} alt="Daniel Gregoire Resume"
+      style={{width: "1000px", height: "1200px",marginLeft:200
+    }}/>
     </div>
     </div>
   );

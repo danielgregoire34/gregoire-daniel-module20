@@ -1,8 +1,8 @@
 import React from 'react';
-import codeimage1 from './images/htmlcode.png';
-import lightbulb from './images/projectslightbulb.png';
-import bluecode from './images/bluecodeimage.png';
 import weather from './images/weatherAPIScreenshot.png';
+import game from './images/boldnewcity.png';
+import unittest from './images/UnitTest.PNG';
+import ecommerceimg from './images/EcommerceBackEndImage.PNG'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -30,40 +30,40 @@ export default function Portfolio() {
       </a>
   </Card>
   <Card style ={{color: "#000", marginBottom:1, width:"50%"}}>
-    <a href="https://github.com/danielgregoire34/gregoire-daniel-module20" target="_blank" rel="noreferrer">
-    <Card.Img src={codeimage1}/>
+    <a href="https://aayo.itch.io/the-bold-new-city" target="_blank" rel="noreferrer">
+    <Card.Img src={game}/>
       <Card.Body>
         <Card.Title>
-          Project2
+          Bold New City 
         </Card.Title>
         <Card.Text>
-          Example Project
+          Unity project 3D Project that utlizes C#, Maya 3D modeling and advance phyics to make a First Person Parkour Game demo.
         </Card.Text>
       </Card.Body>
       </a>
   </Card>
   <Card style ={{color: "#000", marginBottom:1, width:"50%"}}>
-    <a href="https://github.com/danielgregoire34/gregoire-daniel-module20" target="_blank" rel="noreferrer">
-    <Card.Img src={bluecode}/>
+    <a href="https://github.com/danielgregoire34/unit-test" target="_blank" rel="noreferrer">
+    <Card.Img src={unittest}/>
       <Card.Body>
         <Card.Title>
-          Project3
+          Unit Test
         </Card.Title>
         <Card.Text>
-          Example Project
+          An application that utilizes a unit test that creates a team profile generator. It utilizes Jest, Node, and Inquirer.  
         </Card.Text>
       </Card.Body>
       </a>
   </Card>
   <Card style ={{color: "#000", marginBottom:1, width:"50%"}}>
-    <a href="https://github.com/danielgregoire34/gregoire-daniel-module20" target="_blank" rel="noreferrer">
-    <Card.Img src={lightbulb}/>
+    <a href="https://github.com/danielgregoire34/ecommerce-backend" target="_blank" rel="noreferrer">
+    <Card.Img src={ecommerceimg}/>
       <Card.Body>
         <Card.Title>
-          Project4
+          Ecommerce Back-End
         </Card.Title>
         <Card.Text>
-          Example Project
+        Back end of an e-commerce application, it utilizes SQL, Express and sequelize.
         </Card.Text>
       </Card.Body>
       </a>

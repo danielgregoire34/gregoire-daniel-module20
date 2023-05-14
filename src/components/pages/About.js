@@ -5,16 +5,10 @@ export default function About() {
     <div>
       <h1>About Me</h1>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
+      My Name is Daniel Gregoire, I have a AA degree graphic design, BA in Digital Arts and Sciences and a 
+      certificate in UCF's Coding Boot Camp (Full-Stack Web Development). I have skills in 
+      demonstrating a fundamental working knowledge of HTML, CSS, Javascript, third-party APIs, Progressive Web Applications, MySQL, API design, and the MERN stack (MongoDB, Express.js, React.js, Node.js).
+      I also have comprehensive abilities in Maya, The Adobe Suite, C#, C++, Unity, and Unreal Engine.
       </p>
     </div>
   );
