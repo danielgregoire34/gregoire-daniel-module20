@@ -1,21 +1,26 @@
 import React from 'react';
 
+const appStyles = {
+  backgroundColor: 'black', 
+};
+
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs">
+    <div style={appStyles}>
+    <ul className="nav justify-content-end">
       <li className="nav-item">
         <a
-          href="#home"
+          href="#home" style={{fontFamily:'Courier',color:'white'}}
           onClick={() => handlePageChange('Home')}
           className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
-        >
+          >
           Home
         </a>
       </li>
       <li className="nav-item">
         <a
-          href="#about"
+          href="#about"style={{fontFamily:'Courier',color:'white'}}
           onClick={() => handlePageChange('About')}
           className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
         >
@@ -24,7 +29,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
       <li className="nav-item">
         <a
-          href="#resume"
+          href="#resume"style={{fontFamily:'Courier',color:'white'}}
           onClick={() => handlePageChange('Resume')}
           className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
         >
@@ -33,7 +38,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
       <li className="nav-item">
         <a
-          href="#portfolio"
+          href="#portfolio"style={{fontFamily:'Courier',color:'white'}}
           onClick={() => handlePageChange('Portfolio')}
           className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
         >
@@ -42,7 +47,7 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
       <li className="nav-item">
         <a
-          href="#contact"
+          href="#contact"style={{fontFamily:'Courier',color:'white'}}
           onClick={() => handlePageChange('Contact')}
           className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
         >
@@ -50,6 +55,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
     </ul>
+    </div>
   );
 }
 

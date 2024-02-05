@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Box = styled.div`
 
 padding: 80px 60px;
-background: teal;
+background: black;
 position: absolute;
 left:0;
 bottom:-600;
@@ -55,7 +55,7 @@ font-size: 18px;
 text-decoration: none;
 
 &:hover {
-color: green;
+color: black;
 transition: 200ms ease-in;
 }
 `;

@@ -7,14 +7,20 @@ import ecommerceimg from './images/EcommerceBackEndImage.PNG'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import {Card, Container, Row, } from 'react-bootstrap';
+const appStyles = {
+  backgroundColor: 'black', // Set your desired background color here
+  minHeight: '100vh', // Ensure the background color covers the entire viewport height
+};
 
 export default function Portfolio() {
   return (
     
+    
+
     <div>
       <h1>Portfolio</h1>
-
       <Container>
+
 <Row className = "rows">
   <Card style ={{color: "#000", marginBottom:1, width:"50%"}}>
     <a href="https://danielgregoire34.github.io/weather-dashboard/" target="_blank" rel="noreferrer">
@@ -70,7 +76,6 @@ export default function Portfolio() {
   </Card>
 </Row>
       </Container>
-
     </div>
 
 

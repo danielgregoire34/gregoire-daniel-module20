@@ -19,14 +19,14 @@ return (
     <Box>
 
 <Container>
-<Row className = "rows">
+<Row className = "black">
     <Heading>Connect on:</Heading>
-    <Card style ={{color: "#000", marginBottom:1, width:"10%"}}>
+    <Card style ={{color: "black", marginBottom:1,marginLeft:10, width:"10%"}}>
     <a href="https://github.com/danielgregoire34" target="_blank" rel="noreferrer">
     <Card.Img src={github}/>
     </a>
 </Card>
-<Card style ={{color: "#000", marginBottom:1, width:"10%"}}>
+<Card style ={{color: "black", marginBottom:1,marginLeft:10, width:"10%"}}>
     <a href="https://www.linkedin.com/in/daniel-gregoire-4a53661a0/" target="_blank" rel="noreferrer">
     <Card.Img src={linkedin}/>
     </a>

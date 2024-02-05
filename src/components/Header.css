@@ -10,12 +10,17 @@
     text-align: center;
     color: white;
     /*font-size: 48px;*/
+    
 }
 
 .home{
     text-align: center;
+    color: white;
+    
 }
 
 .pfp{
-    width: 100px,
+    width: 100px;
+    border-radius: 50%;
 }
+

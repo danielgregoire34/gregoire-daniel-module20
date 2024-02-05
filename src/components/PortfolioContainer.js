@@ -15,19 +15,6 @@ export default function PortfolioContainer() {
     {
       return <Home/>;
     }
-    if (currentPage === 'About') 
-    {
-      return <About />;
-    }
-    if (currentPage === 'Resume') 
-    {
-      return <Resume />;
-    }
-    if (currentPage === 'Portfolio') 
-    {
-      return <Portfolio />;
-    }
-    return <Contact />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
@@ -35,11 +22,8 @@ export default function PortfolioContainer() {
   return (
     <div>
       {/* We are passing the currentPage from state and the function to update it */}
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      <Header></Header>
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
-      <Footer></Footer>
     </div>
   );
 }
