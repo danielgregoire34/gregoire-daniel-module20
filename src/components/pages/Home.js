@@ -8,6 +8,7 @@ import game from './images/boldnewcity.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import unittest from './images/UnitTest.PNG';
 import ecommerceimg from './images/EcommerceBackEndImage.PNG'
+import bookengine from './images/booksearchengine.png';
 
 import {Card, Container, Row, } from 'react-bootstrap';
 import Header from '../Header';
@@ -45,6 +46,22 @@ export default function Home() {
 
       <Container>
 <Row className = "rows">
+
+
+<Card style ={{backgroundColor: "#343a40", marginBottom:1,marginTop:50, width:"50%"}}>
+    <Card.Img src={bookengine}/>
+      <Card.Body>
+        <Card.Title style={{color:'white'}}>
+        Book Search Engine
+        </Card.Title>
+        <Card.Text style={{color:'white'}}>
+        This MERN application utilizes the Google book search API to search for books online
+        </Card.Text>
+        <Card.Link href="https://github.com/danielgregoire34/book-search-engine" style={{color:'#6495ED', marginLeft:250} }>Github Link</Card.Link>
+      </Card.Body>
+  </Card>
+
+
   <Card style ={{backgroundColor: "#343a40", marginBottom:1,marginTop:50, width:"50%"}}>
     <Card.Img src={weather}/>
       <Card.Body>

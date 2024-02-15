@@ -2,6 +2,7 @@ import React from 'react';
 import weather from './images/weatherAPIScreenshot.png';
 import game from './images/boldnewcity.png';
 import unittest from './images/UnitTest.PNG';
+import bookengine from './images/booksearchengine.png';
 import ecommerceimg from './images/EcommerceBackEndImage.PNG'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -22,6 +23,19 @@ export default function Portfolio() {
       <Container>
 
 <Row className = "rows">
+<Card style ={{color: "#000", marginBottom:1, width:"50%"}}>
+    <a href="https://github.com/danielgregoire34/book-search-engine" target="_blank" rel="noreferrer">
+    <Card.Img src={bookengine}/>
+      <Card.Body>
+        <Card.Title>
+          Book Search Engine
+        </Card.Title>
+        <Card.Text>
+        This MERN application utilizes the Google book search API to search for books online
+        </Card.Text>
+      </Card.Body>
+      </a>
+  </Card>
   <Card style ={{color: "#000", marginBottom:1, width:"50%"}}>
     <a href="https://danielgregoire34.github.io/weather-dashboard/" target="_blank" rel="noreferrer">
     <Card.Img src={weather}/>
